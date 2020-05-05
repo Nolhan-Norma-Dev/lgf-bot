@@ -20,7 +20,7 @@ module.exports.run = async (bot, message, args) => {
       .setFooter(`© 2020 : Bot et message créé par l'agriculteur normand | Tous droits réservés.`, `https://zupimages.net/up/20/13/omgq.png`);
       
       const chan = message.guild.channels.cache.find(c => c.id === '695312462018248780');
-      const sendembed = await chan.send(suggestEmbed)
+      const sendembed = await chan.send(pollEmbed)
       await sendembed.react('✅');
       await sendembed.react('❌'); 
 };
