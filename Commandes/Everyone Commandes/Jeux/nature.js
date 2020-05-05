@@ -12,24 +12,11 @@ const Discord = require("discord.js");
     .setColor("0x007dc5")
     
     const msg = await message.channel.send(embed);
-    await msg.react('💐');
-    await msg.react('🌸');
-    await msg.react('🌷');
-    await msg.react('🍀');
-    await msg.react('🌹');
-    await msg.react('🌻');
-    await msg.react('🌺');
-    await msg.react('🍁');
-    await msg.react('🍃');
-    await msg.react('🍂');
-    await msg.react('🌿');
-    await msg.react('🌾');
-    await msg.react('🍄');
-    await msg.react('🌵');
-    await msg.react('🌴');
-    await msg.react('🌲');
-    await msg.react('🌳');
-};
+    const emote = ['💐','🌸','🌷','🍀','🌹','🌻','🌺','🍁','🍃','🍂','🌿','🌾','🍄','🌵','🌴','🌲','🌳'] // ici tes emotes
+    for (const x of emote) {
+      msg.react(x);
+    }};
+
 module.exports.help = {
     name: "nature",
   };

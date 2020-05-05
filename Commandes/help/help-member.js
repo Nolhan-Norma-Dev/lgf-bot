@@ -18,6 +18,7 @@ exports.run = (client, message, args) => {
     .addField("Infos discord","`+infos-discord` : Donne les informations de l'utilisateur !")
     .addField("Suggest","`+suggest [Votres suggestion]` : envoie une suggestion !")
     .addField("Role Dispo","`+role-dispo`: donne la list de rôle disponible que vous pouvez demmander !")
+    .addField("Jeux","`+jeux` : Done la list des jeux dispo !")
     .setColor(" 0x061922 ")
     .setFooter(`© 2020 : Bot et message créé par l'agriculteur normand | Tous droits réservés.`, `https://zupimages.net/up/20/13/omgq.png`)
     message.channel.send(embed)  

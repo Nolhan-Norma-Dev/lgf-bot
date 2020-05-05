@@ -11,6 +11,8 @@ module.exports.run = async (bot, message, args) => {
         );
     }
     if (!args[0]) return message.channel.send("Syntaxe : +poll ** `[votre question]` **");
+
+    message.guild.channels.cache.find(c => c.id === '695312462018248780').send(`<@&681592246986080267>`).then(m => m.delete({timeout: 20000}));
     
     const pollEmbed = new Discord.MessageEmbed()
       .setTitle(`Sondage !`)
@@ -27,5 +29,5 @@ module.exports.run = async (bot, message, args) => {
 };
 
 module.exports.help = {
-    name: 'polls'
+    name: 'poll'
 };
