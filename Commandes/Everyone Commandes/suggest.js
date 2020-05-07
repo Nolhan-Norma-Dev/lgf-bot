@@ -7,7 +7,7 @@ module.exports.run = async (bot, message, args) => {
     
     if (!args[0]) return message.channel.send("Syntaxe : +suggest ** `[votre suggestion]` **");
 
-    message.guild.channels.cache.find(c => c.id === '681798222314078228').send(`<@&681592246986080267>`).then(m => m.delete({timeout: 20000}));
+    message.guild.channels.cache.find(c => c.id === '681798222314078228').send(`@here`).then(m => m.delete({timeout: 20000}));
     
     const suggestEmbed = new Discord.MessageEmbed()
       .setTitle(`Suggestion !`)
