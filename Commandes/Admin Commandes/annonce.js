@@ -8,6 +8,8 @@ module.exports.run = async (bot, message, args) => {
   if (!message.member.hasPermission('MANAGE_MESSAGES'))
     return message.channel.send("**[Erreur]**, Cette commande est réservée au Staff !");
 
+    message.guild.channels.cache.find(c => c.id === '681894176857784468').send(`<@&681592246986080267>`).then(m => m.delete({timeout: 20000}));
+
     let array_of_arguments = args.join(" ").split(";");
 
 let embed = new Discord.MessageEmbed()
