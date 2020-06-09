@@ -13,6 +13,7 @@ exports.run = (client, message, args) => {
     .addField("Animaux","`+animaux` : Joue avec tes amis !")
     .addField("Nature","`+nature` : Joue avec tes amis !")
     .addField("Salade","`+salade` : Joue avec tes amis !")
+    .addField("Avatar","`+avatar` : affiche ton avatar ou celui d'un de tes amis !")
     .setColor(" 0x061922 ")
     .setFooter(`© 2020 : Bot et message créé par l'agriculteur normand | Tous droits réservés.`, `https://zupimages.net/up/20/13/omgq.png`)
     message.channel.send(embed)  
